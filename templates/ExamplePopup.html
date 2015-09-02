@@ -1,0 +1,33 @@
+<div class="mask"></div>
+<span class="popup_panel">
+	<span class="close" data-bind="click: closeCommand"></span>
+	<span class="title" data-bind="i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/OPEN_POPUP"></span>
+	
+	<div class="fields">
+		<div class="row">
+			<span class="label">
+				<span data-bind="i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/ACCOUNT"></span>:
+			</span>
+			<input type="text" data-bind="value: accountId" class="value input">
+		</div>
+		<div class="row">
+			<span class="label">
+				<span data-bind="i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/FOLDER"></span>:
+			</span>
+			<input type="text" data-bind="value: folderFullName" class="value input">
+		</div>
+		<div class="row">
+			<span class="label">
+				<span data-bind="i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/UID"></span>:
+			</span>
+			<input type="text" data-bind="value: messageUid" class="value input">
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="buttons">
+		<span class="button save" data-bind="click: save, i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/SAVE_BUTTON"></span>
+		<span class="button cancel secondary" data-bind="click: closeCommand, i18n: 'text'" data-i18n="PLUGIN_POPUP_EXAMPLE/CLOSE_BUTTON"></span>
+	</div>
+</span>
+<span class="helper"></span>
